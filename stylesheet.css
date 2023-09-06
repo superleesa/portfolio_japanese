@@ -7,6 +7,16 @@ header {
     font-size: 30px;
 }
 
+footer{
+    position: sticky;  
+    bottom: 0;
+    width: 100%;
+    top: 50px;   
+    text-align: center;
+    height: 50px;
+    padding-top: 40px;
+}
+
 #tabs-container{
     display: flex;
     justify-content: center;
