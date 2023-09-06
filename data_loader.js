@@ -1,5 +1,4 @@
 const container = document.getElementById("projects-container")
-
 // get project records from the database (or simulate it)
 // should follow the format {name, year/date, description, links, tags}
 records = [
@@ -10,7 +9,7 @@ records = [
 
     {name: "PyTorch を用いた MLB 選手のデジタルエンゲージメント予測",
     date: "2023 8月",
-    description: "ニューラルネットワークと LSTM のシーケンスを用いて、デジタルエンゲージ メントを予測する分類モデルを構築しました",
+    description: "ニューラルネットワークと LSTM のシーケンスを用いて、デジタルエンゲージ メントを予測する分類モデルを構築しました。",
     link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: ["Python", "Pytorch", "LSTM", "Machine Learning"]},
 
     {name: "カスタムエンコーダー・デコーダーのデザインと実装",
@@ -43,12 +42,19 @@ records = [
 records.forEach(record => {
     const recordDiv = document.createElement("div");
     recordDiv.classList.add("record")
-    
+
+    // for tags
+    tags_str = ""
+    for (let tag of record.tags){
+        tags_str += `<div style="border:solid 0.5px;">${tag}</div>`
+    }
+    console.log(tags_str)
     recordDiv.innerHTML = `
     <a href=${record.link} class="clickable-div">
         <h3>${record.name}</h3>
         <p>${record.date}</p>
         <p>${record.description}</p>
+        <div style="background-color:transparent;display: flex; justify-content:flex-start; gap: 5px;">${tags_str}</div>
     </a>
     `
 
