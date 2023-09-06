@@ -38,23 +38,23 @@ records = [
     link: "https://github.com/superleesa/brain_tumor_classification_model", tags: ["Python", "Pytorch", "Deep Learning", "Image Recognition"]}
 ];
 
+// todo: create a filtering system
+
+
 // add records to the page
 records.forEach(record => {
     const recordDiv = document.createElement("div");
     recordDiv.classList.add("record")
 
-    // for tags
-    tags_str = ""
-    for (let tag of record.tags){
-        tags_str += `<div style="border:solid 0.5px;">${tag}</div>`
-    }
-    console.log(tags_str)
     recordDiv.innerHTML = `
     <a href=${record.link} class="clickable-div">
         <h3>${record.name}</h3>
         <p>${record.date}</p>
         <p>${record.description}</p>
-        <div style="background-color:transparent;display: flex; justify-content:flex-start; gap: 5px;">${tags_str}</div>
+        <div style="background-color:transparent;
+         display:flex;
+         justify-content:flex-start;
+         gap: 5px;">${record.tags.map(tag => `<div style="border:solid 0.5px;">${tag}</div>`).join()}</div>
     </a>
     `
 
