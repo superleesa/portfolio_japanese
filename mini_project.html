@@ -8,11 +8,15 @@
 <body>
     <header>加島　怜（カシマ　サトシ）</header>
     <div id="tabs-container">
-        <a href="index.html" style="text-decoration: none;"><div class="tab">About me</div></a>
-        <div class="tab" style="background-color:aquamarine;">Mini-projects</div>
+        <a href="index.html" style="text-decoration: none;"><div class="tab"><div>About me</div></div></a>
+        <div class="tab" style="background-color:aquamarine;"><div>Mini-projects</div></div>
         <div class="tab">Notes</div>
     </div>
-    <div id="projects-container"></div>
+    <div id="main" style="display: flex; flex-direction: column; align-items: center; gap: 30px; margin-top: 30px;">
+        <div id="filters-container"></div>
+        <div id="projects-container"></div>
+    </div>
+    
     <script src="data_loader.js"></script>
     <!-- <footer>©Copyright 2023 Satoshi Kashima</footer> -->
 </body>
