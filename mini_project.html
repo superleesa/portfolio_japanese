@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>About</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/8ea8b0a00c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>加島　怜（カシマ　サトシ）</header>
@@ -13,7 +14,15 @@
         <div class="tab">Notes</div>
     </div>
     <div id="main" style="display: flex; flex-direction: column; align-items: center; gap: 30px; margin-top: 30px;">
-        <div id="filters-container"></div>
+        <div id="filters-pane-opener" style="width: 50%; padding: 10px; background-color:#f2f2f2;">
+            <div style="display:flex;align-items:center;" id="filters-pane-title-section"><i class="fa-solid fa-filter" id="filter-icon"></i><span style="padding-left:7px;">フィルター</span></div>
+            <div id="filters-pane" style="display:none;">
+                <hr>
+                <div id="filters-container"></div>
+            </div>
+            
+        </div>
+        
         <div id="projects-container"></div>
     </div>
     

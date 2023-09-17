@@ -78,14 +78,20 @@ footer{
     display: block;
 }
 
+#filters-pane-opener:hover{
+    cursor: pointer;
+}
+
+#filters-pane-opener:hover #filters-pane-title-section{
+    color: rgb(110, 110, 110);
+}
+
 #filters-container{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
-    width: 50%;
     gap: 20px;
-    border: solid;
     padding: 10px;
 }
 

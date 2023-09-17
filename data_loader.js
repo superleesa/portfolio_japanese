@@ -41,7 +41,6 @@ records = [
 
 // a function for filtering records
 const filterRecords = (turnedOnButtons, recordElements) => {
-    console.log("hello");
     recordElements.forEach(record => {
         record.classList.remove("active-record")
     })
@@ -133,4 +132,17 @@ filtersContainer.addEventListener("click", (event) => {
 
     filterRecords(turnedOnButtons, recordElements);
 
+})
+
+// add hide/open the filter tool pane
+const filterPane = document.getElementById("filters-pane-opener");
+filterPane.addEventListener("click", () => {
+    const filtersContainer = document.getElementById("filters-pane");
+
+    const current_block_type = filtersContainer.style.display
+    if (current_block_type === "none"){
+        filtersContainer.style.display = "block";
+    }else{
+        filtersContainer.style.display = "none";
+    }
 })
