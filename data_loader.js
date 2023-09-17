@@ -136,7 +136,12 @@ filtersContainer.addEventListener("click", (event) => {
 
 // add hide/open the filter tool pane
 const filterPane = document.getElementById("filters-pane-opener");
-filterPane.addEventListener("click", () => {
+filterPane.addEventListener("click", (event) => {
+    // if user clicks the filter -> don't close the pane
+    if ((event.target && event.target.classList.contains("filter-button"))){
+        return;
+    }
+
     const filtersContainer = document.getElementById("filters-pane");
 
     const current_block_type = filtersContainer.style.display
