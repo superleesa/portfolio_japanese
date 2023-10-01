@@ -35,7 +35,22 @@ records = [
     {name: "画像認識による脳腫瘍の分類モデル",
     date: "2023 8月",
     description: "Pytorchを使い、ResNetをファインチューンし、脳腫瘍の分類モデルを実装しました。",
-    link: "https://github.com/superleesa/brain_tumor_classification_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Image Recognition"])}
+    link: "https://github.com/superleesa/brain_tumor_classification_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Image Recognition"])},
+
+    {name: "MLB Player Engagement Model",
+    date: "2023 7月",
+    description: "LightGBMやLSTMを使い、次の日の野球選手のソーシャルメディアでのエンゲージメント率を予測するモデルを作った。",
+    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Time Series Data Analysis", "LightGBM", "Machine Learning"])},
+
+    {name: "Pacmanを使った、Agent Systemの構築",
+    date: "2023 9月",
+    description: "主に2つの目的のためにエージェントシステムを設計し、実装しました。1) 制限された時間内に最適に一連のFoodを収集するためのヒューリスティック検索アルゴリズム（IDA*を使用）。2) ゴーストに対する最適な行動を見つけるための敵対的な検索アルゴリズム（Alpha-Beta検索を使用）。",
+    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Agenet System", "AI", "A*", "Adversarial Search"])},
+
+    {name: "小企業向けマネージメントツール",
+    date: "2023 9月",
+    description: "Flask、Flask-Login, SQL Alchemy、JS, HTML/CSSを使い、フルスタックアプリケーションを作りました。アドミンと従業員がそれぞれ会社全体の生産性と個人的な生産性を管理できるツールです。",
+    link: "https://github.com/superleesa/simple_company_management_tool", tags: new Set(["Python", "Flask", "Flask-Login", "SQL Alchemy", "SQLite", "JavaScript", "HTML/CSS"])}
 ];
 
 
