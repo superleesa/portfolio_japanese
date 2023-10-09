@@ -9,8 +9,8 @@ records = [
 
     {name: "PyTorch を用いた MLB 選手のデジタルエンゲージメント予測",
     date: "2023 8月",
-    description: "ニューラルネットワークと LSTM のシーケンスを用いて、デジタルエンゲージ メントを予測する分類モデルを構築しました。",
-    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Pytorch", "LSTM", "Machine Learning"])},
+    description: "LightGBMやLSTMを使い、次の日の野球選手のソーシャルメディアでのエンゲージメント率を予測するモデルを作りました。",
+    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Time Series Data Analysis", "LightGBM", "LSTM", "Machine Learning"])},
 
     {name: "カスタムエンコーダー・デコーダーのデザインと実装",
     date: "2023 5月",
@@ -37,10 +37,10 @@ records = [
     description: "Pytorchを使い、ResNetをファインチューンし、脳腫瘍の分類モデルを実装しました。",
     link: "https://github.com/superleesa/brain_tumor_classification_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Image Recognition"])},
 
-    {name: "MLB Player Engagement Model",
-    date: "2023 7月",
-    description: "LightGBMやLSTMを使い、次の日の野球選手のソーシャルメディアでのエンゲージメント率を予測するモデルを作った。",
-    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Time Series Data Analysis", "LightGBM", "Machine Learning"])},
+    {name: "太陽発電実績の予測モデル",
+    date: "2023 9月",
+    description: "LightGBMとLSTMを使い、次の日の太陽光発電実績を予測するモデルを作りました。",
+    link: "https://github.com/superleesa/power_generation_model", tags: new Set(["Python", "TensorFlow", "Deep Learning", "Time Series Data Analysis", "LightGBM", "Machine Learning", "Matplotlib", "Pandas"])},
 
     {name: "Pacmanを使った、Agent Systemの構築",
     date: "2023 9月",
@@ -48,7 +48,7 @@ records = [
     link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Agenet System", "AI", "A*", "Adversarial Search"])},
 
     {name: "小企業向けマネージメントツール",
-    date: "2023 9月",
+    date: "2023 7月 ~ 2023 10月",
     description: "Flask、Flask-Login, SQL Alchemy、JS, HTML/CSSを使い、フルスタックアプリケーションを作りました。アドミンと従業員がそれぞれ会社全体の生産性と個人的な生産性を管理できるツールです。",
     link: "https://github.com/superleesa/simple_company_management_tool", tags: new Set(["Python", "Flask", "Flask-Login", "SQL Alchemy", "SQLite", "JavaScript", "HTML/CSS"])}
 ];
