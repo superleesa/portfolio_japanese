@@ -45,12 +45,17 @@ records = [
     {name: "Pacmanを使った、Agent Systemの構築",
     date: "2023 9月",
     description: "主に2つの目的のためにエージェントシステムを設計し、実装しました。1) 制限された時間内に最適に一連のFoodを収集するためのヒューリスティック検索アルゴリズム（IDA*を使用）。2) ゴーストに対する最適な行動を見つけるための敵対的な検索アルゴリズム（Alpha-Beta検索を使用）。",
-    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Agenet System", "AI", "A*", "Adversarial Search"])},
+    link: "https://github.com/superleesa/pacman_search_ai", tags: new Set(["Python", "Agenet System", "AI", "A*", "Adversarial Search"])},
 
     {name: "小企業向けマネージメントツール",
-    date: "2023 7月 ~ 2023 10月",
+    date: "2023 7月 ~",
     description: "Flask、Flask-Login, SQL Alchemy、JS, HTML/CSSを使い、フルスタックアプリケーションを作りました。アドミンと従業員がそれぞれ会社全体の生産性と個人的な生産性を管理できるツールです。",
-    link: "https://github.com/superleesa/simple_company_management_tool", tags: new Set(["Python", "Flask", "Flask-Login", "SQL Alchemy", "SQLite", "JavaScript", "HTML/CSS"])}
+    link: "https://github.com/superleesa/simple_company_management_tool", tags: new Set(["Python", "Flask", "Flask-Login", "SQL Alchemy", "SQLite", "JavaScript", "HTML/CSS"])},
+
+    {name: "数学関連ツールアルゴリズムの実装",
+    date: "2023 4月 ~",
+    description: "Pythonで線形最適化、RSAに似た符号化アルゴリズムなどを実装しています。",
+    link: "https://github.com/superleesa/math", tags: new Set(["Python", "Linear Optimization", "Security", "RSA"])}
 ];
 
 
