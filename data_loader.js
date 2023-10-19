@@ -7,11 +7,6 @@ records = [
     link: "https://github.com/superleesa/fast_parallel_random_forest",
     tags: new Set(["Python", "Machine Learning", "Random Forest", "Multiprocessing"])},
 
-    {name: "PyTorch を用いた MLB 選手のデジタルエンゲージメント予測",
-    date: "2023 8月",
-    description: "LightGBMやLSTMを使い、次の日の野球選手のソーシャルメディアでのエンゲージメント率を予測するモデルを作りました。",
-    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Time Series Data Analysis", "LightGBM", "LSTM", "Machine Learning"])},
-
     {name: "カスタムエンコーダー・デコーダーのデザインと実装",
     date: "2023 5月",
     description: "bzipを参考に、効率的にテキストサイズを圧縮するzip機能をデザインし、Pythonで実装しました。",
@@ -23,7 +18,7 @@ records = [
     link: "https://github.com/superleesa/humidity_level_model", tags: new Set(["R", "Machine Learning"])},
 
     {name: "カスタム ML アルゴリズムの実装",
-    date: "2023 1月",
+    date: "2023 1月 ~",
     description: "ニューラルネットワーク、ランダムフォレスト、kNN アルゴリズムをゼロから開発し、パフォーマンスを最適化し、過学習を防ぐテクニックを適用しました。",
     link: "https://github.com/superleesa/neural_network", tags: new Set(["Python", "Machine Learning", "Neural Network", "kNN", "Random Forest"])},
 
@@ -51,6 +46,11 @@ records = [
     date: "2023 7月 ~",
     description: "Flask、Flask-Login, SQL Alchemy、JS, HTML/CSSを使い、フルスタックアプリケーションを作りました。アドミンと従業員がそれぞれ会社全体の生産性と個人的な生産性を管理できるツールです。",
     link: "https://github.com/superleesa/simple_company_management_tool", tags: new Set(["Python", "Flask", "Flask-Login", "SQL Alchemy", "SQLite", "JavaScript", "HTML/CSS"])},
+
+    {name: "PyTorch を用いた MLB 選手のデジタルエンゲージメント予測",
+    date: "2023 8月",
+    description: "LightGBMやLSTMを使い、次の日の野球選手のソーシャルメディアでのエンゲージメント率を予測するモデルを作りました。",
+    link: "https://github.com/superleesa/mlb_digital_engagement_model", tags: new Set(["Python", "Pytorch", "Deep Learning", "Time Series Data Analysis", "LightGBM", "LSTM", "Machine Learning"])},
 
     {name: "数学関連ツールアルゴリズムの実装",
     date: "2023 4月 ~",
