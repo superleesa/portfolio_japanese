@@ -6,6 +6,11 @@ records = [
     link: "https://github.com/superleesa/fast_parallel_random_forest",
     tags: new Set(["Python", "Machine Learning", "Random Forest", "Multiprocessing"])},
 
+    {name: "深層学習フレームワークの作成",
+    date: "2023 1月から", description: "PyTorchとKerasを混ぜたような深層学習フレームワークをゼロから構築しています。実用目的というよりも、様々なarchitectureをどのようにデザインして、効率的に実装するのかを勉強する・伝えるためのものです。（現在進行中）",
+    link: "https://github.com/superleesa/toy_dl_framework",
+    tags: new Set(["Python", "CNN", "RNN", "Deep Learning"])},
+
     {name: "カスタムエンコーダー・デコーダーのデザインと実装",
     date: "2023 5月",
     description: "bzipを参考に、効率的にテキストサイズを圧縮するzip機能をデザインし、Pythonで実装しました。",
@@ -17,9 +22,9 @@ records = [
     link: "https://github.com/superleesa/humidity_level_model", tags: new Set(["R", "Machine Learning"])},
 
     {name: "カスタム ML アルゴリズムの実装",
-    date: "2023 1月 ~",
+    date: "2023 1月",
     description: "ニューラルネットワーク、ランダムフォレスト、kNN アルゴリズムをゼロから開発し、パフォーマンスを最適化し、過学習を防ぐテクニックを適用しました。",
-    link: "https://github.com/superleesa/neural_network", tags: new Set(["Python", "Machine Learning", "Neural Network", "kNN", "Random Forest"])},
+    link: "https://github.com/superleesa/knn", tags: new Set(["Python", "Machine Learning", "Neural Network", "kNN", "Random Forest"])},
 
     {name: "Spark、Kafka、MongoDB ストリームアプリケーション",
     date: "2023 7月",
@@ -42,7 +47,7 @@ records = [
     link: "https://github.com/superleesa/pacman_search_ai", tags: new Set(["Python", "Agenet System", "AI", "A*", "Adversarial Search"])},
 
     {name: "小企業向けマネージメントツール",
-    date: "2023 7月 ~",
+    date: "2023 7月から",
     description: "Flask、Flask-Login, SQL Alchemy、JS, HTML/CSSを使い、フルスタックアプリケーションを作りました。アドミンと従業員がそれぞれ会社全体の生産性と個人的な生産性を管理できるツールです。",
     link: "https://github.com/superleesa/simple_company_management_tool", tags: new Set(["Python", "Flask", "Flask-Login", "SQL Alchemy", "SQLite", "JavaScript", "HTML/CSS"])},
 
