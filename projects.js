@@ -20,33 +20,12 @@ records = [
     image_url: "bzip.png",
     tags: new Set(["Python", "Zip Algorithm"])},
 
-    {name: "R による湿度分類モデル",
-    date: "2023 6月",
-    description: "データクリーニング、特徴エンジニアリング、モデル作成、ハイパーパラメータ チューニング、ROC 分析を行い、湿度状態を予測する二値分類モデルを構築しました。",
-    link: "https://github.com/superleesa/humidity_level_model", 
-    image_url: "humidity_model.png",
-    tags: new Set(["R", "Machine Learning"])},
-
-    {name: "カスタム ML アルゴリズムの実装",
-    date: "2023 1月",
-    description: "ニューラルネットワーク、ランダムフォレスト、kNN アルゴリズムをゼロから開発し、パフォーマンスを最適化し、過学習を防ぐテクニックを適用しました。",
-    link: "https://github.com/superleesa/knn", 
-    image_url: "knn.png",
-    tags: new Set(["Python", "Machine Learning", "Neural Network", "kNN", "Random Forest"])},
-
     {name: "Spark、Kafka、MongoDB ストリームアプリケーション",
     date: "2023 7月",
     description: "PySpark と PyMongo でストリームアプリケーションを作成し、衛星やセンサー のストリーミングから火災検出とデータベースへの保存を行いました。",
     link: "https://github.com/superleesa/fire_stream_app", 
     image_url: "spark_app.png",
     tags: new Set(["Python", "Spark", "MongoDB"])},
-
-    {name: "画像認識による脳腫瘍の分類モデル",
-    date: "2023 8月",
-    description: "Pytorchを使い、ResNetをファインチューンし、脳腫瘍の分類モデルを実装しました。",
-    link: "https://github.com/superleesa/brain_tumor_classification_model", 
-    image_url: "brain_tumor_classification.png",
-    tags: new Set(["Python", "Pytorch", "Deep Learning", "Image Recognition"])},
 
     {name: "太陽発電実績の予測モデル",
     date: "2023 9月",
@@ -62,12 +41,33 @@ records = [
     image_url: "pacman.png",
     tags: new Set(["Python", "Agenet System", "AI", "A*", "Adversarial Search"])},
 
+    {name: "カスタム ML アルゴリズムの実装",
+    date: "2023 1月",
+    description: "ニューラルネットワーク、ランダムフォレスト、kNN アルゴリズムをゼロから開発し、パフォーマンスを最適化し、過学習を防ぐテクニックを適用しました。",
+    link: "https://github.com/superleesa/knn", 
+    image_url: "knn.png",
+    tags: new Set(["Python", "Machine Learning", "Neural Network", "kNN", "Random Forest"])},
+
     {name: "小企業向けマネージメントツール",
     date: "2023 7月から",
     description: "Flask、Flask-Login, SQL Alchemy、JS, HTML/CSSを使い、フルスタックアプリケーションを作りました。アドミンと従業員がそれぞれ会社全体の生産性と個人的な生産性を管理できるツールです。",
     link: "https://github.com/superleesa/simple_company_management_tool", 
     image_url: "simple_company_management_tool.png",
     tags: new Set(["Python", "Flask", "Flask-Login", "SQL Alchemy", "SQLite", "JavaScript", "HTML/CSS"])},
+
+    {name: "R による湿度分類モデル",
+    date: "2023 6月",
+    description: "データクリーニング、特徴エンジニアリング、モデル作成、ハイパーパラメータ チューニング、ROC 分析を行い、湿度状態を予測する二値分類モデルを構築しました。",
+    link: "https://github.com/superleesa/humidity_level_model", 
+    image_url: "humidity_model.png",
+    tags: new Set(["R", "Machine Learning"])},
+
+    {name: "数学関連ツールアルゴリズムの実装",
+    date: "2023 4月 ~",
+    description: "Pythonで線形最適化、RSAに似た符号化アルゴリズムなどを実装しています。",
+    link: "https://github.com/superleesa/math", 
+    image_url: "no_image.png",
+    tags: new Set(["Python", "Linear Optimization", "Security", "RSA"])},
 
     {name: "PyTorch を用いた MLB 選手のデジタルエンゲージメント予測",
     date: "2023 8月",
@@ -76,10 +76,10 @@ records = [
     image_url: "no_image.png",
     tags: new Set(["Python", "Pytorch", "Deep Learning", "Time Series Data Analysis", "LightGBM", "LSTM", "Machine Learning"])},
 
-    {name: "数学関連ツールアルゴリズムの実装",
-    date: "2023 4月 ~",
-    description: "Pythonで線形最適化、RSAに似た符号化アルゴリズムなどを実装しています。",
-    link: "https://github.com/superleesa/math", 
-    image_url: "no_image.png",
-    tags: new Set(["Python", "Linear Optimization", "Security", "RSA"])}
+    {name: "画像認識による脳腫瘍の分類モデル",
+    date: "2023 8月",
+    description: "Pytorchを使い、ResNetをファインチューンし、脳腫瘍の分類モデルを実装しました。",
+    link: "https://github.com/superleesa/brain_tumor_classification_model", 
+    image_url: "brain_tumor_classification.png",
+    tags: new Set(["Python", "Pytorch", "Deep Learning", "Image Recognition"])}
 ];

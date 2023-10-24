@@ -73,7 +73,10 @@ header a:visited {
     
 }
 
-
+#filters-pane-opener:hover{
+    cursor: pointer;
+    border-color: #B3A492;
+}
 
 
 .record{
@@ -92,13 +95,10 @@ header a:visited {
     display: block;
 }
 
-#filters-pane-opener:hover{
-    cursor: pointer;
-}
-
 #filters-pane-opener:hover #filters-pane-title-section{
     color: rgb(110, 110, 110);
 }
+
 
 #filters-container{
     display: flex;
