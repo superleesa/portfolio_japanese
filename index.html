@@ -5,59 +5,85 @@
     <title>About</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
-    <header>Satoshi Kashima</header>
-    <div id="tabs-container">
+<body style="background-color: #f1eadc;">
+    <header style="height: 50px; display:flex; justify-content: center;background-color:#e6e9c6; position: sticky; top: 0;">
+        <div style="width:30%; display: flex; align-items: center; gap: 30px; justify-content:center;"><h3 style="font-size:18px;">Satoshi Kashima</h3><a href="mini_project.html" style="text-decoration: none;"><p class="tab-new" style="font-size:15px;">Projects</p></a><a href="https://github.com/superleesa" style="text-decoration: none;"><p class="tab-new" style="font-size:15px;">Github</p></a></div>
+    </header>
+    <!-- <div id="tabs-container">
         <div class="tab" style="background-color:aquamarine;"><div>About me</div></div>
         <a href="mini_project.html" style="text-decoration: none;"><div class="tab"><div>Mini-projects</div></div></a>
         <div class="tab">Notes</div>
-    </div>
-    <div >
-        <p id="main-text-field">加島怜と申します。現在オーストラリアのMonash大学にて情報工学・機械学習を勉強しています。現在は機械学習またはバックエンドのインターンシップを探しています。</p>
-        <p id="main-text-field">連絡先: <a href="mailto: 6world4trigger@gmail.com">6world4trigger@gmail.com</a></p>
+    </div> -->
+    <div style="display:flex;justify-content:center;">
+        <div style="width:40%; display:flex; flex-direction:column;">
+            <div style="display: flex; align-items: center; gap: 30px; justify-content: center;">
+                <div class="main-text-field">
+                    <h1 style="font-size: 30pt; margin-bottom:0;">Satoshi Kashima</h1>
+                    <p style="margin-top: 0;">ML Engineer / Data Scientist (Intern) </p>
+                </div>
+                <img src="profile_pic.jpg" alt="me" style="width: 90px; height: 90px; border-radius: 50%">
+            </div>
 
-
+            <p class="main-level-text">加島怜と申します。現在オーストラリアのMonash大学にて情報工学・機械学習を勉強しています。現在は機械学習またはバックエンドのインターンシップを探しています。</p>
+            <p class="main-level-text">連絡先: <a href="mailto: 6world4trigger@gmail.com">6world4trigger@gmail.com</a></p>
     
-        <div style="display:flex; flex-direction:column; align-items:center;">
-            <h2>スキル</h2>
-            <ul>
-                <li>Python, R, Java (, Javascript)</li>
-                <li>Scikit-Learn (, Pytorch, TensorFlow)</li>
-                <li>Numpy</li>
-                <li>Pandas, Matplotlib</li>
-                <li>Flask, SQL Alchemy</li>
-                <li>HTML, CSS</li>
-                <li>MongoDB, SQL</li>
-                <li>(Git, Docker)</li>
-                <li>英語</li>
-            </ul>
-        </div>
-
-        <div style="display:flex; flex-direction:column; align-items:center;margin-top:20px;">
-            <p>現在、PyTorchとKerasを混ぜたような深層学習フレームワークをゼロから構築しています。良かったら読んでみて・使ってみてください。</p>
-            <a href="https://github.com/superleesa/knn">Toy DL Framework(Github)</a>
-        </div>
-
+    
         
-        
-        <!-- slide -->
-        <div style="margin-top:50px;">
-            <div style="text-align: center;">たまに大学で機械学習などについてプレゼンをしています（日本語訳）。</div>
-            <div style="display: flex; justify-content:center;">
-                
-                <div style="width: 600px; height:500px;">
-                    <script async class="docswell-embed" src="https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js" data-src="https://www.docswell.com/slide/K8G9MP/embed" data-aspect="0.5625"></script>
+            <div style="margin-top: 20px;">
+                <h3>スキル</h3>
+                <ul>
+                    <li>Python, R, Java (, Javascript)</li>
+                    <li>Scikit-Learn, Keras (, Pytorch, TensorFlow)</li>
+                    <li>Numpy, Pandas, Matplotlib</li>
+                    <li>Flask, SQL Alchemy</li>
+                    <li>HTML, CSS</li>
+                    <li>MongoDB, SQL</li>
+                    <li>Git (, Docker)</li>
+                    <li>英語</li>
+                </ul>
+            </div>
+
+            <h3 style="margin-top: 30px; margin-bottom:0px;">最近のアクティビティ</h3>
+    
+            <div class="main-level-text">
+                <p>現在、PyTorchとKerasを混ぜたような深層学習フレームワークをゼロから構築しています。良かったら読んでみて・使ってみてください。</p>
+                <a href="https://github.com/superleesa/toy_dl_framework">Toy DL Framework(Github)</a>
+            </div>
+    
+            
+            
+            <!-- slide -->
+            <div style="margin-top:30px;">
+                <div style="margin-bottom: 10px;">たまに大学で機械学習などについてプレゼンをしています（日本語訳）。</div>
+                <div >
+                    
+                    <div style="width: 500px; border-radius: 20px; border: solid transparent;">
+                        <script async class="docswell-embed" src="https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js" data-src="https://www.docswell.com/slide/K8G9MP/embed" data-aspect="0.5625"></script>
+                        
+                    </div>
                     <div class="docswell-link">
                         <a href="https://www.docswell.com/s/6678794/K8G9MP-2023-09-16-231103">Low-levelに見るニューラルネットワーク by @6678794</a>
                     </div>
+    
                 </div>
-
             </div>
-        </div>
-    </div>
 
-    <!-- <footer>©Copyright 2023 Satoshi Kashima</footer> -->
+
+            <footer style="display: flex; justify-content: center; font-size: 10pt;"><p>©Copyright 2023 Satoshi Kashima</p></footer>
+
+        </div>
+
+
+    </div>
+    
+
     
     
 </body>
+<style>
+    body{
+        margin: 0;
+    }
+    
+</style>
 </html>

@@ -1,5 +1,5 @@
 body {
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 header {
@@ -7,15 +7,7 @@ header {
     font-size: 30px;
 }
 
-footer{
-    position: sticky;  
-    bottom: 0;
-    width: 100%;
-    top: 50px;   
-    text-align: center;
-    height: 50px;
-    padding-top: 40px;
-}
+
 
 #tabs-container{
     display: flex;
@@ -54,23 +46,45 @@ footer{
     text-align: center;
     background-color: transparent;
     font-size: 8px;
+    border-radius: 5px;
 }
 .filter-button:hover{
-    background-color: aquamarine;
+    background-color: #B3A492;
 }
 .filter-button.active-filter{
-    background-color: rgb(27, 114, 85);
+    background-color: #ac9171;
 }
+
+.tab-new{
+    cursor: pointer;
+    padding: 5px;
+    border: solid transparent;
+    border-radius: 5px;
+
+}
+header a:visited {
+    color: black;
+}
+
+.tab-new:hover{
+    background-color: #B3A492;
+    padding: 5px;
+    border-color: #B3A492;
+    
+}
+
+
 
 
 .record{
     background-color: #f2f2f2;
     margin-top: 20px;
-    width: 40%;
-    height: 150px;
+    width: 45%;
+    /* height: 150px; */
     padding: 10px;
     border: solid;
     border-color: #f2f2f2;
+    border-radius: 5px;
     display: none;
 }
 
@@ -99,13 +113,13 @@ footer{
     display: flex;
     justify-content: center;
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
 }
 
 .record:hover{
-    border-color: aquamarine;
+    border-color: #B3A492;
 }
 
 .clickable-div {

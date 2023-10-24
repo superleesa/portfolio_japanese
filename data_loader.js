@@ -61,10 +61,7 @@ records.forEach(record => {
         <h3>${record.name}</h3>
         <p>${record.date}</p>
         <p>${record.description}</p>
-        <div style="background-color:transparent;
-         display:flex;
-         justify-content:flex-start;
-         gap: 5px;flex-wrap:wrap">${[...record.tags].map(tag => `<div style="border:solid 0.5px;">${tag}</div>`).join()}</div>
+        
     </a>
     `
 
