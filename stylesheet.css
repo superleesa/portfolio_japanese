@@ -42,10 +42,10 @@ header {
 .filter-button{
     /* width: 40px; */
     height: 30px;
-    border: solid;
+    border: solid 1px;
     text-align: center;
     background-color: transparent;
-    font-size: 8px;
+    font-size: 12pt;
     border-radius: 5px;
 }
 .filter-button:hover{
