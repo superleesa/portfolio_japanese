@@ -19,17 +19,17 @@
             <div style="display: flex; align-items: center; gap: 30px; justify-content: center;">
                 <div class="main-text-field">
                     <h1 style="font-size: 30pt; margin-bottom:0;">Satoshi Kashima</h1>
-                    <p style="margin-top: 0;">ML Engineer / Data Scientist (Intern) </p>
+                    <p style="margin-top: 0;">ML Engineer / Data Scientist</p>
                 </div>
                 <img src="profile_pic.jpg" alt="me" style="width: 90px; height: 90px; border-radius: 50%">
             </div>
 
             <p class="main-level-text">加島怜と申します。現在オーストラリアのMonash大学にて情報工学・機械学習を勉強しています。現在は機械学習またはバックエンドのインターンシップを探しています。</p>
-            <p class="main-level-text">連絡先: <a href="mailto: 6world4trigger@gmail.com">6world4trigger@gmail.com</a></p>
+            <div style="display: flex; justify-content: center;"><p class="main-level-text">連絡先: <a href="mailto: 6world4trigger@gmail.com">6world4trigger@gmail.com</a></p></div>
     
     
         
-            <div style="margin-top: 20px;">
+            <div style="margin-top: 0px;">
                 <h3>スキル</h3>
                 <ul>
                     <li>Python, R, Java (, Javascript)</li>
@@ -42,6 +42,11 @@
                     <li>英語</li>
                 </ul>
             </div>
+            
+            <div style="display:flex; justify-content:center;">
+                <a href="mini_project.html" class="custom-button-link" style="text-decoration: none;"><div class="custom-button" style="font-size:15px; text-align: center; display: flex; align-items: center; justify-content: center"><b>プロジェクト&nbsp&nbsp</b><i class="right-arrow"></i></div></a>
+            </div>
+            
 
 
             <div style="margin-top: 20px;">
@@ -54,7 +59,7 @@
                 </ul>
             </div>
 
-            <h3 style="margin-top: 30px; margin-bottom:0px;">最近のアクティビティ</h3>
+            <h3 style="margin-top: 20px; margin-bottom:0px;">最近のアクティビティ</h3>
     
             <div class="main-level-text">
                 <p>現在、PyTorchとKerasを混ぜたような深層学習フレームワークをゼロから構築しています。良かったら読んでみて・使ってみてください。</p>
@@ -95,6 +100,34 @@
     body{
         margin: 0;
     }
+
+    .custom-button{
+        cursor: pointer;
+        padding: 5px;
+        border: solid transparent;
+        border-radius: 5px;
+        background-color: #FAD9B6;
+        width: 200px;
+        height: 30px;
+    }
+
+    .custom-button-link:visited {
+        color: black;
+    }
+    
+    .custom-button:hover{
+        background-color: #B3A492;
+        padding: 5px;
+        border-color: #B3A492;
+    }
+
+    .right-arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+      }
     
 </style>
 </html>
