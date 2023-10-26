@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>About</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/8ea8b0a00c.js" crossorigin="anonymous"></script>
 </head>
 <body style="background-color: #f1eadc;">
-    <header style="height: 50px; display:flex; justify-content: center;background-color:#FAD9B6; position: sticky; top: 0;">
+    <header style="height: 50px; display:flex; justify-content: center;background-color:#fad9b6; position: sticky; top: 0;">
         <div style="width:30%; display: flex; align-items: center; gap: 30px; justify-content:center;"><h3 style="font-size:18px;">Satoshi Kashima</h3><a href="mini_project.html" style="text-decoration: none;"><p class="tab-new" style="font-size:15px;">Projects</p></a><a href="https://github.com/superleesa" style="text-decoration: none;"><p class="tab-new" style="font-size:15px;">Github</p></a></div>
     </header>
     <!-- <div id="tabs-container">
@@ -24,52 +25,120 @@
                 <img src="profile_pic.jpg" alt="me" style="width: 90px; height: 90px; border-radius: 50%">
             </div>
 
-            <p class="main-level-text">加島怜と申します。現在オーストラリアのMonash大学にて情報工学・機械学習を勉強しています。現在は機械学習またはバックエンドのインターンシップを探しています。</p>
-            <div style="display: flex; justify-content: center;"><p class="main-level-text">連絡先: <a href="mailto: 6world4trigger@gmail.com">6world4trigger@gmail.com</a></p></div>
+            <div style="display: flex; justify-content: center;"><p class="main-level-text">加島怜と申します。現在オーストラリアのMonash大学にて情報工学・機械学習を勉強しています。現在は機械学習またはバックエンドのインターンシップを探しています。連絡は <a href="mailto: 6world4trigger@gmail.com">6world4trigger@gmail.com</a>までお願いいたします。</p></div>
     
     
         
-            <div style="margin-top: 0px;">
-                <h3>スキル</h3>
-                <ul>
-                    <li>Python, R, Java (, Javascript)</li>
-                    <li>Scikit-Learn, Keras (, Pytorch, TensorFlow)</li>
-                    <li>Numpy, Pandas, Matplotlib</li>
-                    <li>Flask, SQL Alchemy</li>
-                    <li>HTML, CSS</li>
-                    <li>MongoDB, SQL</li>
-                    <li>Git (, Docker)</li>
-                    <li>英語</li>
-                </ul>
-            </div>
-            
-            <div style="display:flex; justify-content:center;">
-                <a href="mini_project.html" class="custom-button-link" style="text-decoration: none;"><div class="custom-button" style="font-size:15px; text-align: center; display: flex; align-items: center; justify-content: center"><b>プロジェクト&nbsp&nbsp</b><i class="right-arrow"></i></div></a>
-            </div>
-            
+            <div style="margin-top: 30px;">
+                <h2 style="text-align: center;">スキル</h2>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;"><div style="font-size: 10pt;">数年経験あり<br>検索なしで使える</div><div style="background-image: linear-gradient(to right, #ac9171, #E7C1BF); width: 50%; height: 5px;"></div><div style="font-size: 10pt;">最近は使っていない<br>検索が必用<br></div></div>
+                <div class="skills" style="display: flex; gap: 10px;">
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div id="skills-programming-language" class="skill-type"><p class="small-margin-p">プログラミング言語</p></div>
+                        <div id="skills-ml-dl-frameworks" class="skill-type"><p class="small-margin-p">機械学習フレームワーク</p></div>
+                        <div id="skills-python-libs" class="skill-type"><p class="small-margin-p">その他関連ライブラリ</p></div>
+                        <div id="skills-frontend-language" class="skill-type"><p class="small-margin-p">フロントエンド言語</p></div>
+                        <div id="skills-db" class="skill-type"><p class="small-margin-p">データベース</p></div>
+                        <div id="skills-others" class="skill-type"><p class="small-margin-p">その他</p></div>
+                        <div id="skills-language" class="skill-type"><p class="small-margin-p">言語</p></div>
+                    </div>
+                    
+                </div>
+                <script>
+                    const all_skills = {
+                        "skills-programming-language": {"Python": 5, "R": 3, "Java": 3, "JavaScript": 2},
+                        "skills-ml-dl-frameworks": {"Scikit-Learn": 5, "Keras": 5, "Tensorflow": 4, "Pytorch": 3},
+                        "skills-python-libs": {"Numpy": 5, "Pandas": 5, "Matplotlib": 4},
+                        "skills-frontend-language": {"HTML": 5, "CSS": 3},
+                        "skills-db": {"MongoDB": 4, "SQL": 3},
+                        "skills-others": {"Git": 4, "Docker": 2},
+                        "skills-language": {"英語": 5, "日本語": 5}
+                    }
+                    
+                    const skillDivNames = Object.keys(all_skills);
+                    const skillToLevel = Object.values(all_skills);
+
+                    for (let i=0; i < skillDivNames.length; i++){
+                        let skillDivName = skillDivNames[i];
+                        let skillTypeDiv = document.getElementById(skillDivName);
+
+                        let skills = skillToLevel[i];
+
+                        let skillNames = Object.keys(skills);
+                        let skillScores = Object.values(skills);
+
+                        for (let j=0; j < skillNames.length; j++){
+                            let wrapperIndivisualSkillDiv = document.createElement("div");
+                            wrapperIndivisualSkillDiv.classList.add("wrapper-skill-box");
+                            wrapperIndivisualSkillDiv.classList.add("skill-box");
+                            wrapperIndivisualSkillDiv.classList.add(`level${skillScores[j]}`);
 
 
-            <div style="margin-top: 20px;">
-                <h3>強み</h3>
-                <ul>
-                    <li>計算量を意識したプログラムの作成が出来る</li>
-                    <li>幅広いドメインでプログラミングをしてきた経験があるため、柔軟性がある。機械学習、データ分析、ウェブアプリ、ゲーム、スクリプティングなど。</li>
-                    <li>ツールに頼るだけでなく、ツール自体を理解して、自分で実装してみる姿勢</li>
-                    <li>英語</li>
-                </ul>
-            </div>
+                            let indivisualSkillDiv = document.createElement("div");
+                            wrapperIndivisualSkillDiv.appendChild(indivisualSkillDiv);
 
-            <h3 style="margin-top: 20px; margin-bottom:0px;">最近のアクティビティ</h3>
+                            indivisualSkillDiv.innerText = skillNames[j];
+                            // indivisualSkillDiv.classList.add("skill-box");
+                            // indivisualSkillDiv.classList.add(`level${skillScores[j]}`);
     
-            <div class="main-level-text">
+                            skillTypeDiv.appendChild(wrapperIndivisualSkillDiv);
+                        }
+                        
+                    }
+
+
+                </script>
+            </div>
+            
+            <div style="display:flex; justify-content:center; margin-top: 50px;">
+                <a href="mini_project.html" class="custom-button-link" style="text-decoration: none;"><div class="custom-button" style="font-size:15px; text-align: center; display: flex; align-items: center; justify-content: center"><b>プロジェクト&nbsp&nbsp</b><i class="fa-solid fa-arrow-right"></i></div></a>
+            </div>
+            
+
+
+            <div style="margin-top: 50px;">
+                <h2 style="text-align: center;">強み</h2>
+                <div id="strength-container"></div>
+                <script>
+                    const strengths = {
+                        "アルゴリズム思考": "計算量を意識したプログラムの作成が出来ます。",
+                        "柔軟性": "幅広いドメインでプログラミングをしてきた経験があります。機械学習、データ分析、ウェブアプリ、ゲーム、スクリプティングなど。",
+                        "Low-level思考": "ツールに頼るだけでなく、ツール自体を理解して、自分で実装してみる姿勢でプログラムを書いています。",
+                        "言語":"母国語の日本語に加えて、海外留学の経験があるため英語も喋れます。"
+                    }
+
+                    const strengthTitles = Object.keys(strengths);
+                    const strengthExplanations = Object.values(strengths);
+
+                    const strengthContainerDiv = document.getElementById("strength-container");
+                    console.log(strengthContainerDiv)
+
+                    for (let i=0; i < strengthTitles.length; i++){
+                        const recordDiv = document.createElement("div");
+                        recordDiv.classList.add("strength-record");
+                        recordDiv.innerHTML = `
+                            <h3>${strengthTitles[i]}</h3>
+                            <p>${strengthExplanations[i]}</p>
+                        `   
+                        strengthContainerDiv.appendChild(recordDiv);
+                    }
+
+
+                </script>
+                
+            </div>
+
+            <h2 style="margin-top: 70px;text-align: center;">最近のアクティビティ</h2>
+    
+            <div class="main-level-text" style="display: flex; flex-direction: column; align-items: center;">
                 <p>現在、PyTorchとKerasを混ぜたような深層学習フレームワークをゼロから構築しています。良かったら読んでみて・使ってみてください。</p>
-                <div style="display: flex; justify-content: center;"><a href="https://github.com/superleesa/toy_dl_framework">Toy DL Framework(Github)</a></div>
+                <div><a href="https://github.com/superleesa/toy_dl_framework">Toy DL Framework(Github)</a></div>
             </div>
     
             
             
             <!-- slide -->
-            <div style="margin-top:30px;">
+            <div style="margin-top:30px;" style="display: flex; flex-direction: column; align-items: center;">
                 <div style="margin-bottom: 10px;">たまに大学で機械学習などについてプレゼンをしています（日本語訳）。</div>
                 <div style="display: flex; flex-direction: column; align-items: center;">
                     
@@ -121,13 +190,66 @@
         border-color: #B3A492;
     }
 
-    .right-arrow {
-        border: solid black;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(-45deg);
-      }
+    .skill-box{
+        /* width: 40px; */
+        height: 30px;
+        border: solid 1px;
+        background-color: transparent;
+        font-size: 12pt;
+        border-radius: 5px;
+        padding: 6px;
+    }
+    .skill-box:hover{
+        background-color: #B3A492;
+    }
+    .skill-type{
+        display: flex;
+        gap: 10px;
+    }
+    .level5{
+        background-color: #AC9171;
+    }
+    .level4{
+        background-color: #C0A18B;
+    }
+    .level3{
+        background-color: #D3B1A5;
+    }
+    .level2{
+        background-color: #E7C1BF;
+    }
+    .level1{
+        background-color: #FAD9B6;
+    }
+
+    .small-margin-p{
+        min-width: 180px;
+        margin-top: 10px;
+    }
+    .wrapper-skill-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #strength-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .strength-record{
+        background-color: #FAD9B6;
+        margin-top: 20px;
+        width: 45%;
+        /* height: 150px; */
+        padding: 10px;
+        border: solid;
+        border-color: #cec0b2;
+        border-radius: 5px;
+    }
+    .strength-record:hover{
+        border-color: #B3A492;
+    }
     
 </style>
 </html>
