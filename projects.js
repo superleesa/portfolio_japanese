@@ -16,7 +16,7 @@ records = [
     tags_detailed: new Set(["Python", "CNN", "RNN", "Deep Learning"])},
 
     {name: "質問目的の抽出と分類モデル作成",
-    date: "2023 10月", description: "質問の目的を分類する問題において、様々なモデルを試した結果、Transformer, LSTMとTextCNNをスタックしたモデルを採用し、正解率 >=0.98を達成しました。（大学の課題の一貫で、取り組みました。）",
+    date: "2023 10月", description: "質問の目的を分類する問題において、様々なモデルを試した結果、Transformer, LSTMとTextCNNをスタックしたモデルを採用し、keras-tunerを用いてhyper-parameterの最適化をしたのちに、正解率 >=0.98を達成しました。（大学の課題の一貫で、取り組みました。）",
     link: "https://github.com/superleesa/question_classification_model/blob/main/question_classfication_model.ipynb",
     image_url: "parallel_random_forest.png",
     tags: new Set(["データ分析とモデル構築", "アルゴリズムのデザインと実装"]),
